@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Infinite carousel</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="index.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="carousel">
+				<div class="slider-window">
+					<ul class="slider">
+						<li class="slide"><img src="/img/1.jpg" alt="silhouette 1" /></li>
+						<li class="slide"><img src="/img/2.jpg" alt="silhouette 2" /></li>
+						<li class="slide"><img src="/img/3.jpg" alt="silhouette 3" /></li>
+						<li class="slide"><img src="/img/4.jpg" alt="silhouette 4" /></li>
+						<li class="slide"><img src="/img/5.jpg" alt="silhouette 5" /></li>
+					</ul>
+				</div>
+				<div class="carousel-indicators">
+					<div class="current"></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div class="controlls">
+					<img
+						class="arrow prev"
+						src="img/left.svg"
+						alt="Jump to previous slide"
+					/>
+					<img
+						class="arrow next"
+						src="img/right.svg"
+						alt="Jump to previous slide"
+					/>
+				</div>
+			</div>
+			<div class="settings">
+				<label for="autoscroll" class="switch" type="checkbox">
+					Auto-scroll
+					<input type="checkbox" id="autoscroll"
+				/></label>
+				<label for="carousel-indicators" class="switch" type="checkbox">
+					Carousel indicators
+					<input type="checkbox" id="carousel-indicators"
+				/></label>
+			</div>
+		</div>
+	</body>
+</html>
